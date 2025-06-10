@@ -1,0 +1,13 @@
+[config]
+language = "Python"
+framework = "FastAPI"
+libraries = ["Pydantic", "SQLAlchemy", "PostgreSQL", "HTTPX", "Uvicorn"]
+goal = """
+Serve as a backend API for a DIY home improvement app.
+Receive user input and send it to an AI agent service.
+Store project plans in a PostgreSQL database.
+Return decorative plans (materials, steps, estimates) to the frontend.
+"""
+
+[exclude]
+files = ["__pycache__/", "migrations/", "tests/"]
